@@ -1,0 +1,165 @@
+
+
+.main-content {
+    font-family: 'Montserrat';
+}
+
+.next-content {
+    padding-top: 40px;    
+    font-family: 'Montserrat';
+}
+
+.first-part p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #414042;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #14475F;
+}
+
+h2+p {
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+.second-part {
+    padding-top: 20px;
+}
+
+.cards ul {    
+    list-style: none;   
+    margin: 0 -15px;
+    padding: 0;      
+}
+
+.second-part li {
+    position: relative;
+    float: left;
+    width: calc(100%/2); 
+    padding: 0 15px; 
+    padding-bottom: 30px;
+    counter-increment: inst;
+}
+
+.card-content {    
+    margin: 0 auto;   
+    overflow: hidden;    
+    background-color: #1085A9;   
+    padding: 30px;
+    width: 100%;    
+}
+
+.card-content>a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: white;
+    padding: 15px;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    transition: .2s;
+
+}
+
+.card-content>a:hover {
+    box-shadow: 0 0 5px white;
+    scale: 50px;
+    transition: .2s;
+}
+
+.card-content>p {    
+    margin: 0;
+    padding-top: 20px;    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding-bottom: 58px;
+}
+
+.link {       
+    max-width: 100px;
+    width: 100%;  
+    float: left; 
+}
+
+.link>p {    
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    float: left;
+}
+
+p+.special {
+    font-family: 'Montserrat';    
+    font-weight: 500;
+    font-size: 13px; 
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.link>a {
+    display: inline-block;  
+    float: right; 
+    width: 18px;
+    height: 18px;
+    border: 1px solid white;
+    vertical-align: middle;
+    padding: 4px; 
+    border-radius: 20px;
+    margin-left: 11px;
+    transition: .4s;
+}
+
+.link a:hover {
+    transform: scale(1.5);
+    transition: .4s;
+    box-shadow: 0 0 3px white;
+}
+.link+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue';    
+    font-weight: 700;
+    font-size: 162px;
+    line-height: 100px;
+    color: #2891B2;
+    float: right;
+}
+
+.third-card p {   
+    padding: 0px;
+    margin: 0;
+}
+
+.third-card>a+p {
+    padding-top: 20px;
+    padding-bottom: 4px;
+}
+
+.special-link {
+   padding-top: 22px;
+}
+
+.link+p:before {
+    content: counter(inst);
+    left: 100%;
+    position: absolute;
+    margin-left: -90px;
+    bottom: 100%;
+    margin-bottom: -240px;
+}

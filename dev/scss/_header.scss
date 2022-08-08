@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;    
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.clearfix:after {    
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;   
+}
+
+.content-header1 {
+    padding-top: 50px;
+    padding-bottom: 7px;
+}
+
+.background1 {
+    background-image: url('../images/bgdiving.png');   
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin: 0 auto;    
+}
+
+.background1 a {
+    float: right;    
+}
+
+.background1 h1 {
+    padding: 0;
+    margin: 0;   
+    margin-top: 700px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 61px;    
+    color: #FFFFFF;
+    padding-bottom: 7px;
+}
+
+.background2 {    
+    margin: 0 auto;
+    background: #14475F; 
+}
+
+.content-header2 {
+    padding: 16px 0;
+}
+
+.background2 p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';   
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;    
+    text-align: center;
+    color: #FFFFFF;    
+}
