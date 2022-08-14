@@ -6,7 +6,6 @@
 
 .next-content {
     padding-top: 40px;    
-    font-family: 'Montserrat';
 }
 
 .first-part p {
@@ -23,7 +22,7 @@ h2 {
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
-    color: #14475F;
+    color: $background;
 }
 
 h2+p {
@@ -35,13 +34,13 @@ h2+p {
     padding-top: 20px;
 }
 
-.cards ul {    
+.cards {    
     list-style: none;   
     margin: 0 -15px;
     padding: 0;      
 }
 
-.second-part li {
+.cards li {
     position: relative;
     float: left;
     width: calc(100%/2); 
@@ -53,7 +52,7 @@ h2+p {
 .card-content {    
     margin: 0 auto;   
     overflow: hidden;    
-    background-color: #1085A9;   
+    background-color: $cards-bg;   
     padding: 30px;
     width: 100%;    
 }
@@ -68,7 +67,6 @@ h2+p {
     width: 60px;
     height: 60px;
     transition: .2s;
-
 }
 
 .card-content>a:hover {
@@ -87,13 +85,18 @@ h2+p {
     padding-bottom: 58px;
 }
 
-.link {       
-    max-width: 100px;
-    width: 100%;  
+.link a {     
+    margin-left: -10px;
     float: left; 
+    transition: .4s;
 }
 
-.link>p {    
+.link a {
+    padding: 0 10px;
+    display: block;   
+}
+
+.link p {    
     margin: 0;
     padding: 0;
     font-weight: 600;
@@ -101,6 +104,17 @@ h2+p {
     line-height: 20px;
     color: #FFFFFF;
     float: left;
+}
+
+.arrow {
+    float: right;
+    width: 18px;
+    height: 18px;
+    border: 1px solid white;
+    border-radius: 20px;
+    vertical-align: middle;
+    padding: 4px;
+    margin-left: 11px;     
 }
 
 p+.special {
@@ -112,25 +126,12 @@ p+.special {
     opacity: 0.5;
 }
 
-.link>a {
-    display: inline-block;  
-    float: right; 
-    width: 18px;
-    height: 18px;
-    border: 1px solid white;
-    vertical-align: middle;
-    padding: 4px; 
-    border-radius: 20px;
-    margin-left: 11px;
-    transition: .4s;
+.link a:hover {
+    transform: scale(1.1);
+    transition: .4s;   
 }
 
-.link a:hover {
-    transform: scale(1.5);
-    transition: .4s;
-    box-shadow: 0 0 3px white;
-}
-.link+p {
+.cards li::before {
     margin: 0;
     padding: 0;
     font-family: 'Bebas Neue';    
@@ -155,7 +156,7 @@ p+.special {
    padding-top: 22px;
 }
 
-.link+p:before {
+.cards li:before {
     content: counter(inst);
     left: 100%;
     position: absolute;

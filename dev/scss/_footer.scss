@@ -28,6 +28,10 @@
     padding-bottom: 16px;
 }
 
+address {
+    font-style: normal;
+}
+
 .part p {
     padding: 0;
     margin: 0;
@@ -61,7 +65,7 @@ h3+p {
 }
 
 .footer-two {
-    background:  #14475F;
+    background: $background;
 }
 
 .footer-text p{
@@ -81,5 +85,5 @@ h3+p {
     font-size: 13px;
     line-height: 150%;
     text-align: center;
-    color: #14475F;
+    color: $background;
 }
