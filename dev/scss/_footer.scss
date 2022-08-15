@@ -1,5 +1,5 @@
 .footer-one {
-    background: #87C5E0;
+    background: $bg-footer;
     width: 100%;
 }
 
@@ -16,29 +16,29 @@
     float: left;
     width: calc(100%/2);
     padding: 0 15px; 
-}
 
-.part h3 {
-    padding: 0;
-    margin: 0;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    color: #231F20;
-    padding-bottom: 16px;
+    & h3 {
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: $footer-font;
+        padding-bottom: 16px;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: $footer-font;
+    }
 }
 
 address {
     font-style: normal;
-}
-
-.part p {
-    padding: 0;
-    margin: 0;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    color: #231F20;
 }
 
 .left p {
@@ -50,10 +50,16 @@ h3+p {
 }
 
 .contacts {
-    padding-bottom: 8px ;
-}
-.contacts p {
-    display: inline-block;
+    padding-bottom: 8px;
+    transition: .4s;
+
+    & a:hover {
+        color: white;
+        transition: .4s;
+    }
+    p {
+        display: inline-block;
+    }
 }
 
 .right a {
@@ -61,7 +67,13 @@ h3+p {
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
-    color: #231F20;
+    color: $footer-font;
+    transition: .4s;
+
+    &:hover {
+        color: white;
+        transition: .4s; 
+    }
 }
 
 .footer-two {
